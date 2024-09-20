@@ -82,7 +82,7 @@ function Box() {
           896: {  // For screens >= 896px (desktop)
             slidesPerView: 3,
             slidesPerGroup: 3,
-            spaceBetween: 10,
+            spaceBetween: 5,
           },
           0: {  // For screens <= 895px (mobile)
             slidesPerView: 1,
