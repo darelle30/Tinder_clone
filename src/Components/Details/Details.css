@@ -1,0 +1,285 @@
+@import url('@fortawesome/fontawesome-free/css/all.min.css');
+
+
+.footer {
+  background-color: #111418;
+  color: #fff;
+  padding: 10px 50px; 
+}
+
+.footer .container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+
+.footer .row {
+  display:flex;
+  flex-direction:row;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  cursor: context-menu;
+
+}
+
+.footer h3::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  color: #ffffff80;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  word-wrap: break-word;
+  white-space: normal;
+  word-wrap: break-word;
+  display: inline-block;
+
+}
+
+.footer ul li span{
+  display: block;
+}
+
+
+.footer ul li a::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+
+.footer ul li a:hover {
+  color: #FF443D;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons li a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.social-icons ul li span{
+  display: block;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #fff9f9b0;
+  margin: 1.5rem 0;
+}
+
+/* App download section */
+.app-download-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.app-download-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.app-store-button img,
+.google-play-button img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.google-play-button img {
+  height: 4.5rem;
+  position: relative;
+  top: -10px;
+}
+
+/* Place the app images beside the "Get the APP" text */
+.app-description {
+  align-items: center;
+  color: #ffffffb3;
+  font-size: 14px;
+  line-height: 1.5;
+  
+}
+
+.app-description p {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 1rem;
+  cursor: context-menu;
+
+  
+}
+
+.app-description p::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+
+.additional-links {
+  margin-top: 1rem;
+}
+
+.additional-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.additional-links ul li {
+  font-size: 14px;
+}
+
+.additional-links ul li a {
+  color: #ffffffb3;
+  text-decoration: none;
+}
+
+.additional-links ul li a:hover {
+  color: #FF443D;
+}
+
+.additional-links ul li a::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+
+/* Footer bottom - making all links in one line */
+.footer-bottom {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between; /* Distribute links and copyright to opposite sides */
+  align-items: center; /* Align items vertically centered */
+}
+
+.footer-bottom .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align the links to the right */
+  gap: 1rem;
+}
+
+.footer-bottom .footer-links li {
+  cursor:context-menu;
+  font-size: 14px;
+}
+
+.footer-bottom .footer-links li a {
+  color: #ffffffb3;
+  text-decoration: none;
+  white-space: nowrap; /* Prevents text wrapping to a new line */
+}
+
+.footer-bottom .footer-links li a:hover {
+  color: #FF443D;
+}
+
+.footer-bottom .footer-links li a::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+
+/* Align copyright text to the left */
+.copyright {
+  font-size: 14px;
+  color: #ffffff81;
+  text-align: left; /* Ensures text is aligned to the left */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.copyright::selection {
+  background-color: #ffffff;
+  color: #444141;
+}
+.copyright:hover{
+  cursor:context-menu;
+}
+
+
+/* Responsive styles */
+@media (max-width: 896px) {
+  .footer .row {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .social-icons li a {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .app-download-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .app-store-button img {
+    display: none;
+  }
+
+  .google-play-button img {
+    height: 3.5rem;
+  }
+
+  .app-description {
+    line-height: 1.5;
+    font-size: 11px;
+  }
+
+  /* Fix footer bottom for mobile */
+  .footer-bottom {
+    display: flex;
+    flex-direction: column; /* Stack copyright and links vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem; /* Add some space between links and copyright */
+  }
+
+  .footer-bottom .footer-links li{
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    font-size: 11px;
+  }
+
+
+
+  .copyright {
+    text-align: center; /* Ensure the copyright text is centered */
+  }
+}

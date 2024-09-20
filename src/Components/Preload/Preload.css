@@ -1,0 +1,52 @@
+@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+
+:root {
+  --text-font-family: "Anton", sans-serif;
+  --text-animation-speed: 0.5s;
+  --text-size: 5em;
+  --logo-color: #fff; /* White logo */
+}
+
+
+/* Scope styles inside .preload-container to avoid affecting other components */
+.preload-container * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.preload-container {
+  background: linear-gradient(180deg, #ff416c, #ff4b2b); /* Pink to orange gradient */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align content at the top */
+
+}
+
+.preload-container .logo-icon {
+  margin-left: 20%;
+  fill: var(--logo-color); /* White fill */
+  width: 25vw; /* Adjust as needed */
+  animation: blink var(--text-animation-speed) ease-in infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .preload-container .logo-icon {
+        margin-left: 40%;
+        fill: var(--logo-color); /* White fill */
+        width: 70vw; /* Adjust as needed */
+        animation: blink var(--text-animation-speed) ease-in infinite alternate;
+      }
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+
+html, body{
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+*{
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  
+}
+body{
+  background: #f5f5f5;
+  /* font-family: 'Roboto', 'Ubuntu', sans-serif; */
+  overflow: auto;
+
+  
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container{
+  padding-left: 2%;
+}
